@@ -1,0 +1,1 @@
+empezar el testing por el componente q menos dpendencias tiene
