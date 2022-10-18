@@ -42,9 +42,6 @@ export const FormWithCustomHook = () => {
         value={email}
         onChange={onInputChange}
       />
-<<<<<<< HEAD
-      {username === 'strider2' && <Message />}
-=======
       <input
         type="password"
         className="form-control mt-2"
@@ -56,7 +53,6 @@ export const FormWithCustomHook = () => {
       <button onClick={onResetForm} className="btn btn-primary mt-2">
         Borrar
       </button>
->>>>>>> 65fe4d330fd6ce428936245c241a159986d6777c
     </>
   );
 };
