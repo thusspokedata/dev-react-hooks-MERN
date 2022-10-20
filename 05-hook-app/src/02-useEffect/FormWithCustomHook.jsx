@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Message } from './Message';
+// import { useState, useEffect } from 'react';
+// import { Message } from './Message';
 import { useForm } from '../hook/useForm';
 
 export const FormWithCustomHook = () => {

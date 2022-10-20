@@ -1,4 +1,5 @@
 import { useCounter, useFetch } from '../hook';
+import { LoadingQuote, Quote } from './';
 
 export const MultipleCustomHooks = () => {
   const { counter, increment } = useCounter(1);
@@ -22,8 +23,11 @@ export const MultipleCustomHooks = () => {
         </blockquote>
       )} */}
 
-      <loadingQuote />
-      <Quote />
+      {isLoading ? 
+        <LoadingQuote />
+       : 
+        <Quote author={author} quote={quote}/>
+      }
 
       <button
         className="btn btn-primary"
