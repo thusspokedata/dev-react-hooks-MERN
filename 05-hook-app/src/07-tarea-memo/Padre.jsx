@@ -1,18 +1,24 @@
 import { Hijo } from './Hijo';
-import { useState } from 'react';
-import { useCallback } from 'react';
 
-export const CallbackHook = () => {
+import { useCallback, useState } from 'react';
+
+
+
+export const Padre = () => {
     const [counter, setCounter] = useState();
 
-    const Padre = useCallback() => {
   const numeros = [2, 4, 6, 8, 10];
   const [valor, setValor] = useState(0);
 
-  const incrementar = (num) => {
-    setValor(valor + num);
-  };
+  const incrementar = useCallback(
+    (num) => {
+      setValor( (oldValue) => oldValue + num);
+    },
+    [],
+  )
+  
 
+  
   return (
     <div>
       <h1>Padre</h1>
